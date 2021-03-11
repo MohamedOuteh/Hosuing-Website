@@ -162,13 +162,48 @@ section, article, footer{
 
 /* TABLET STYLES */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
 
-  /* applies to screens wider than 499px */
+  /* applies to screens wider than 699px */
 
-  body {
-    background: #cfc;
+  header nav{
+    flex-direction: row;
+    transform: none;
+    transition: none;
+    height: auto;
   }
+
+  header nav a {
+  flex-grow: 1;
+}
+header nav a:hover {
+  background-color: rgba(100, 100, 0, 0.2);
+}
+
+#menuToggler {
+  display: none;
+}
+
+main {
+  max-width: none;
+  font-size: 1.5em;
+}
+
+section.images {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+article {
+  flex-basis: 45%;
+}
+
+section#story p, section#story h2 {
+  max-width: 500px;
+  margin: 1em auto;
+}
 }
 
 
