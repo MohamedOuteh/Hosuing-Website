@@ -120,6 +120,7 @@ section.text{
 }
 
 article{
+  width: 100%;
   position:relative;
   z-index: 10;
 }
@@ -142,7 +143,8 @@ main{
 }
 
 section.images{
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -167,6 +169,7 @@ section, article, footer{
   /* applies to screens wider than 699px */
 
   header nav{
+    letter-spacing: 0.02em;
     flex-direction: row;
     transform: none;
     transition: none;
@@ -190,14 +193,24 @@ main {
 }
 
 section.images {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
 }
 
+
+
+section.images article{
+  width: 50%;
+}
+
+s
+
 article {
   flex-basis: 45%;
+  flex-direction: row;
 }
 
 section#story p, section#story h2 {
