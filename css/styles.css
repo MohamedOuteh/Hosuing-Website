@@ -126,8 +126,10 @@ article{
 }
 
 article img{
-  width: 95%;
+  width: 75%;
+  height: 16em;
   box-sizing: border-box;
+  filter: drop-shadow(0 0 5px white);
 }
 
 article h2{
