@@ -127,10 +127,11 @@ article{
 
 article img{
   width: 75%;
-  height: 16em;
+  height: 20em;
   box-sizing: border-box;
   filter: drop-shadow(0 0 5px white);
 }
+
 
 article h2{
   position: absolute;
@@ -152,7 +153,7 @@ section.images{
 }
 
 section.images article{
-  width: 30%;
+  width: 100%;
 }
 
 article h2{
