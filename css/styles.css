@@ -255,6 +255,12 @@ body {
 .container {
   position: relative;
   display: none;
+  width: 75%;
+  margin-left: auto;
+}
+
+.container p{
+  margin-right: auto;
 }
 
 /* Expanding image text */
@@ -262,9 +268,9 @@ body {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: white;
+  color: black;
   font-size: 20px;
-  padding: 1em;
+  padding: 3em;
 }
 
 /* Closable button inside the expanded image */
@@ -275,7 +281,6 @@ body {
   color: red;
   font-size: 35px;
   cursor: pointer;
-  padding: 0.5em;
 }
 
 /* TABLET STYLES */
