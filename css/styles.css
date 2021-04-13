@@ -125,8 +125,14 @@ article{
   z-index: 10;
 }
 
-article img{
+article.Clive{
   width: 100%;
+  position:relative;
+  z-index: 10;
+}
+
+article img{
+  width: 70%;
   height: 20em;
   box-sizing: border-box;
   filter: drop-shadow(0 0 5px white);
@@ -139,7 +145,7 @@ article h2{
   top: 0;
   margin: 0;
   padding: 0.25em;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(119 119 119 / 70%);
 }
 
 main{
@@ -156,6 +162,8 @@ section.images{
 section.images article{
   width: 100%;
 }
+
+
 
 article h2{
   position: static;
