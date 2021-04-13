@@ -253,6 +253,15 @@ body {
   clear: both;
 }
 
+section.row1{
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+section.row{
+  width: 100%;
+}
+
 /* The expanding image container */
 .container {
   position: relative;
@@ -265,7 +274,7 @@ body {
   position: relative;
   display: none;
   width: 75%;
-  margin-left: auto;
+  margin-top: 20px;
 }
 
 
@@ -276,6 +285,15 @@ body {
 
 /* Expanding image text */
 #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: red;
+  font-size: 20px;
+}
+
+/* Expanding image text */
+#imtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
