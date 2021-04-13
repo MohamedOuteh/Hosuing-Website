@@ -234,6 +234,8 @@ body {
   padding: 10px;
 }
 
+
+
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8;
@@ -259,6 +261,15 @@ body {
   margin-left: auto;
 }
 
+.container2 {
+  position: relative;
+  display: none;
+  width: 75%;
+  margin-left: auto;
+}
+
+
+
 .container p{
   margin-right: auto;
 }
@@ -268,9 +279,8 @@ body {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: black;
+  color: red;
   font-size: 20px;
-  padding: 3em;
 }
 
 /* Closable button inside the expanded image */
