@@ -253,9 +253,12 @@ section .column {
 }
 
 ul.column{
-  color: blue;
+  color: whitesmoke;
   max-width: 30%;
   padding-left: 1em;
+  float: left;
+
+  padding: 10px;
 }
 
 /* Style the images inside the grid */
@@ -291,7 +294,7 @@ section.row{
 .container {
   position: relative;
   display: none;
-  width: 75%;
+  width: 65%;
   margin-top: 20px;
   margin-left: auto;
 }
