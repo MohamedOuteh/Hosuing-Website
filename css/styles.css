@@ -189,6 +189,7 @@ section, article, footer{
   justify-self: center;
   filter: drop-shadow(0 0 5px white);
   margin-bottom: 1em;
+  overflow: hidden;
 }
 
 .card .front, .card .back {
@@ -808,7 +809,7 @@ section:nth-of-type(1) {
     color: Black;
     max-width: 100%;
     padding-left: 1em;
-    float: left;
+    float: right;
     padding: 10px;
   }
 
@@ -871,7 +872,7 @@ section:nth-of-type(1) {
 
 
   .price{
-    color: blue;
+    color: #00048a;
     width: 100%;
   }
 
