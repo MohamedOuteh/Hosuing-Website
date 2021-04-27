@@ -249,10 +249,10 @@ article.Founder{
 /* The grid: Four equal columns that floats next to each other */
 section.column
 {
-  float: left;
-  width: 25%;
-  padding: 10px;}
-
+  float:left;
+  width:25%;
+  padding:10px;
+}
 ul.column{
   color: whitesmoke;
   max-width: 30%;
