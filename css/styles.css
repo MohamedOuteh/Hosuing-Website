@@ -44,7 +44,7 @@ body {
 }
 
 #menuToggler.open div:nth-child(2){
-  transform: translate(5em);
+  opacity: 0;
 }
 
 header, main, section, article{
@@ -116,8 +116,8 @@ section, footer{
 }
 
 section.text{
-  background-color: white;
-  color: black;
+  background-color: darkgrey;
+  color: darkslateblue;
 }
 
 article{
@@ -241,19 +241,18 @@ article.Founder{
   z-index: 10;
 }
 
-/*About us Styling*////////////////////////////////////
+/*About us Styling*/
 
 
-/*Houses Styling*/////////////////////////////////////
+/*Houses Styling*/
 
 /* The grid: Four equal columns that floats next to each other */
-section.column
-{
+  section.column{
   float:left;
   width:25%;
   padding:10px;
 }
-ul.column{
+  ul.column{
   color: whitesmoke;
   max-width: 30%;
   padding-left: 1em;
@@ -261,31 +260,32 @@ ul.column{
   padding: 10px;}
 
   /* Style the images inside the grid */
-  .column img {
+.column img {
     opacity: 0.8;
     cursor: pointer;
     padding: 5px;
   }
 
-  .column img:hover {
+.column img:hover {
     opacity: 1;
   }
 
   /* Clear floats after the columns */
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  section.row1{
+section.row1{
     width: 100%;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     display: flex;
   }
 
-  section.row{
+section.row{
     width: 100%;
+    padding-bottom: 2em;
     display: flex;
   }
 
