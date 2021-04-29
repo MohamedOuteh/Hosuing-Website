@@ -7,6 +7,11 @@ html{
   scroll-behavior: smooth;
 }
 
+footer{
+  background-color: darkgrey;
+  color: white;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -16,34 +21,34 @@ body {
 }
 
 #menuToggler {
-	position: fixed;
-	top: 0.5em;
-	right: 0.5em;
-	height: 1.5em;
-	width: 1.5em;
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+  height: 1.5em;
+  width: 1.5em;
   align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	z-index: 20;
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.25em;
 }
 
 #menuToggler div {
-	height: 20%;
-	background: white;
-	transition: transform 0.2s;
+  height: 20%;
+  background: white;
+  transition: transform 0.2s;
 }
 
 #menuToggler.open div:nth-child(1) {
-	transform: translateY(0.3em) rotate(45deg);
+  transform: translateY(0.3em) rotate(45deg);
 }
 #menuToggler.open div:nth-child(3) {
-	transform: translateY(-0.5em) rotate(-45deg);
+  transform: translateY(-0.5em) rotate(-45deg);
 }
 #menuToggler.open div:nth-child(2) {
-	opacity: 0;
+  opacity: 0;
 }
 
 header, main, section, article{
@@ -253,12 +258,12 @@ article.Founder{
 /*Houses Styling*/
 
 /* The grid: Four equal columns that floats next to each other */
-  section.column{
+section.column{
   float:left;
   width:25%;
   padding:10px;
 }
-  ul.column{
+ul.column{
   color: whitesmoke;
   max-width: 30%;
   padding-left: 1em;
@@ -266,30 +271,30 @@ article.Founder{
   padding: 10px;}
 
   /* Style the images inside the grid */
-.column img {
+  .column img {
     opacity: 0.8;
     cursor: pointer;
     padding: 5px;
   }
 
-.column img:hover {
+  .column img:hover {
     opacity: 1;
   }
 
   /* Clear floats after the columns */
-.row:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-section.row1{
+  section.row1{
     width: 100%;
     padding-bottom: 2em;
     display: flex;
   }
 
-section.row{
+  section.row{
     width: 100%;
     padding-bottom: 2em;
     display: flex;
@@ -356,8 +361,6 @@ section.row{
   }
 
   /*Houses Styling*/
-
-
   /*Gallery Styling*/
 
   * {
@@ -375,9 +378,6 @@ section.row{
     flex-wrap: wrap;
     padding: 0 4px;
   }
-
-
-
   /* Create four equal columns that sits next to each other */
   .column {
     -ms-flex: 100%;
@@ -403,7 +403,10 @@ section.row{
       color: black;
     }
 
-
+    footer{
+      background-color: lightgrey;
+      color: white;
+    }
     header nav{
       letter-spacing: 0.02em;
       flex-direction: row;
@@ -425,25 +428,20 @@ section.row{
       border-radius: 100px;
       padding: 0.5em 0;
     }
-
     header nav a:hover {
       background-color: rgba(100, 100, 0, 0.5);
     }
-
     #menuToggler {
       display: none;
     }
-
     main {
       max-width: none;
       font-size: 1.5em;
       padding: 1em;
     }
-
     .desc{
       color: #3e4e59;
     }
-
     article h2{
       position: absolute;
       top: 0;
@@ -453,12 +451,10 @@ section.row{
       position: static;
       color: white;
     }
-
     section.text{
       background-color: #558b9d;
       color: black;
     }
-
     section.images {
       display: flex;
       flex-direction: row;
@@ -466,20 +462,13 @@ section.row{
       justify-content: space-around;
       align-items: flex-start;
     }
-
-
-
     section.images article{
       width: 100%;
     }
-
-
-
     article {
       flex-basis: 45%;
       flex-direction: row;
     }
-
     article img{
       width: 100%;
       height: 100%;
@@ -492,8 +481,6 @@ section.row{
       max-width: 500px;
       margin: 1em auto;
     }
-
-
     .intro{
       text-align: center;
     }
@@ -557,7 +544,6 @@ section.row{
     }
 
     .card p{
-
       text-align: center;
       font-size: 20px;
       font-family: -webkit-pictograph;
@@ -574,9 +560,6 @@ section.row{
       height: 400px;
     }
     /*About us Styling*/
-
-
-
     /*Houses Styling*/
 
     /* The grid: Four equal columns that floats next to each other */
@@ -585,7 +568,6 @@ section.row{
       width: 25%;
       padding: 10px;
     }
-
     ul.column{
       color: Black;
       max-width: 30%;
@@ -593,9 +575,6 @@ section.row{
       float: left;
       padding: 10px;
     }
-
-
-
     /* The expanding image container */
     .container {
       position: relative;
@@ -640,7 +619,6 @@ section.row{
       color: #b4ff00;
       font-size: 20px;
     }
-
     /* Closable button inside the expanded image */
     .closebtn {
       position: absolute;
@@ -650,12 +628,7 @@ section.row{
       font-size: 35px;
       cursor: pointer;
     }
-
-
     /*Houses Styling*/
-
-
-
     /*Gallery Styling*/
     .column {
       -ms-flex: 50%;
@@ -664,10 +637,6 @@ section.row{
     }
     /*Gallery Styling*/
   }
-
-
-
-
   /* DESKTOP STYLES */
 
   @media screen and (min-width: 1000px) {
@@ -755,27 +724,6 @@ section.row{
       align-items: flex-start;
     }
 
-
-
-    section.images article{
-      width: 100%;
-    }
-
-
-
-    article {
-      flex-basis: 45%;
-      flex-direction: row;
-    }
-
-    article img{
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-      filter: drop-shadow(0 0 7px black);
-      padding: 1em;
-    }
-
     section#story p, section#story h2 {
       max-width: 500px;
       margin: 1em auto;
@@ -798,15 +746,6 @@ section.row{
       padding: 2em 0.5em;
     }
 
-
-
-    /*About us Styling*/
-
-
-    /*About us Styling*/
-
-
-
     /*Houses Styling*/
     /* The grid: Four equal columns that floats next to each other */
     section .column {
@@ -814,7 +753,6 @@ section.row{
       width: 25%;
       padding: 10px;
     }
-
     ul.column{
       color: Black;
       max-width: 100%;
@@ -822,9 +760,6 @@ section.row{
       float: right;
       padding: 10px;
     }
-
-
-
     /* The expanding image container */
     .container {
       position: relative;
@@ -841,8 +776,6 @@ section.row{
       margin-top: 20px;
       margin-left: auto;
     }
-
-
     /* Expanding image text */
     #imgtext {
       position: absolute;
@@ -869,7 +802,6 @@ section.row{
       color: #b4ff00;
       font-size: 20px;
     }
-
     /* Closable button inside the expanded image */
     .closebtn {
       position: absolute;
@@ -879,17 +811,12 @@ section.row{
       font-size: 35px;
       cursor: pointer;
     }
-
-
     .price{
       color: #00048a;
       width: 100%;
     }
 
     /*Houses Styling*/
-
-
-
     /*Gallery Styling*/
     .column {
       -ms-flex: 25%;

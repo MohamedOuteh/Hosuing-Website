@@ -11,11 +11,10 @@ for (const element of document.querySelectorAll('nav a')) {
 
 
 function myFunction(imgs) {
-  var contain = document.getElementById("contain");
   // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
+  const expandImg = document.getElementById("expandedImg");
   // Get the image text
-  var imgText = document.getElementById("imgtext");
+  const imgText = document.getElementById("imgtext");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -26,9 +25,9 @@ function myFunction(imgs) {
 
 function myFunction1(imgs) {
   // Get the expanded image
-  var expandImg = document.getElementById("expandImg");
+  const expandImg = document.getElementById("expandImg");
   // Get the image text
-  var imgText = document.getElementById("imtext");
+  const imgText = document.getElementById("imtext");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -39,9 +38,9 @@ function myFunction1(imgs) {
 
 function myFunction2(imgs) {
   // Get the expanded image
-  var expandImg = document.getElementById("expandIm");
+  const expandImg = document.getElementById("expandIm");
   // Get the image text
-  var imgText = document.getElementById("imtex");
+  const imgText = document.getElementById("imtex");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
