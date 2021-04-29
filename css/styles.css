@@ -456,14 +456,9 @@ ul.column{
       color: black;
     }
     section.images {
-      display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-around;
       align-items: flex-start;
-    }
-    section.images article{
-      width: 100%;
     }
     article {
       flex-basis: 45%;
@@ -472,8 +467,7 @@ ul.column{
     article img{
       width: 100%;
       height: 100%;
-      box-sizing: border-box;
-      filter: drop-shadow(0 0 7px black);
+      filter: drop-shadow(0 0 7px lightgrey);
       padding: 1em;
     }
 
@@ -577,19 +571,12 @@ ul.column{
     }
     /* The expanding image container */
     .container {
-      position: relative;
-      display: none;
       width: 70%;
-      margin-top: 20px;
-      margin-left: auto;
     }
 
     .container2 {
-      position: relative;
-      display: none;
       width: 70%;
       margin-top: 20px;
-      margin-left: auto;
     }
 
 
@@ -754,27 +741,7 @@ ul.column{
       padding: 10px;
     }
     ul.column{
-      color: Black;
-      max-width: 100%;
-      padding-left: 1em;
       float: right;
-      padding: 10px;
-    }
-    /* The expanding image container */
-    .container {
-      position: relative;
-      display: none;
-      width: 70%;
-      margin-top: 20px;
-      margin-left: auto;
-    }
-
-    .container2 {
-      position: relative;
-      display: none;
-      width: 70%;
-      margin-top: 20px;
-      margin-left: auto;
     }
     /* Expanding image text */
     #imgtext {
@@ -784,32 +751,9 @@ ul.column{
       color: #b4ff00;
       font-size: 20px;
     }
-
-    /* Expanding image text */
-    #imtext {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: #b4ff00;
-      font-size: 20px;
-    }
-
-    /* Expanding image text */
-    #imtex {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: #b4ff00;
-      font-size: 20px;
-    }
     /* Closable button inside the expanded image */
     .closebtn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
       color: red;
-      font-size: 35px;
-      cursor: pointer;
     }
     .price{
       color: #00048a;
