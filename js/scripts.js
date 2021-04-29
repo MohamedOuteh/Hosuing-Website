@@ -1,13 +1,13 @@
-menuToggler.addEventListener('click', ev =>{
-  menuToggler.classList.toggle('open');
-  menuToggler.textcontent = menuToggler.textcontent === "x" ? "≡":"x";
+menuToggler.addEventListener('click', ev => {
+	menuToggler.classList.toggle('open');
 });
 
-for(const element of document.querySelectorAll('nav a')){
-  element.addEventListener('click', ev => {
-    menuToggler.classList.remove('open');
-  });
+for (const element of document.querySelectorAll('nav a')) {
+	element.addEventListener('click', ev => {
+		menuToggler.classList.remove('open');
+	});
 }
+
 
 
 function myFunction(imgs) {

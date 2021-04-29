@@ -15,36 +15,35 @@ body {
   z-index: 0;
 }
 
-#menuToggler{
-  position: fixed;
-  top: 0.5em;
-  right: 0.5em;
-  height: 1.5em;
-  width: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 20;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 0.25em;
+#menuToggler {
+	position: fixed;
+	top: 0.5em;
+	right: 0.5em;
+	height: 1.5em;
+	width: 1.5em;
+  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0.25em;
 }
 
-#menuToggler div{
-  height: 20%;
-  background: white;
-  transition: transform 0.3s;
+#menuToggler div {
+	height: 20%;
+	background: white;
+	transition: transform 0.2s;
 }
 
-#menuToggler.open div:nth-child(1){
-  transform: translateY(0.3em) rotate(45deg);
+#menuToggler.open div:nth-child(1) {
+	transform: translateY(0.3em) rotate(45deg);
 }
-
-#menuToggler.open div:nth-child(3){
-  transform: translateY(-0.5em) rotate(-45deg);
+#menuToggler.open div:nth-child(3) {
+	transform: translateY(-0.5em) rotate(-45deg);
 }
-
-#menuToggler.open div:nth-child(2){
-  opacity: 0;
+#menuToggler.open div:nth-child(2) {
+	opacity: 0;
 }
 
 header, main, section, article{
@@ -59,6 +58,7 @@ header{
   min-height: 70vh;
   /* header background image goes here */
   background-image: url("house.jpg");
+  background-position: center;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -102,7 +102,8 @@ nav a{
 header nav a{
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1px;
-  padding: 0.5em 0;
+  padding: 1.5em 0;
+  border: inset;
 }
 
 main{
@@ -115,9 +116,13 @@ section, footer{
   padding: 0 1em;
 }
 
+section.intro{
+  text-align: center;
+}
+
 section.text{
-  background-color: darkgrey;
-  color: darkslateblue;
+  color: white;
+  background-color: rgb(80 80 80 / 70%);
 }
 
 article{
@@ -416,8 +421,11 @@ section.row{
 
     header nav a {
       flex-grow: 1;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 100px;
+      padding: 0.5em 0;
     }
+
     header nav a:hover {
       background-color: rgba(100, 100, 0, 0.5);
     }
@@ -688,8 +696,10 @@ section.row{
     }
 
     header nav a {
-      flex-grow: 1;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 1px;
+      padding: 0.6em 0;
+      border: thin;
     }
     header nav a:hover {
       background-color: rgba(100, 100, 0, 0.5);
