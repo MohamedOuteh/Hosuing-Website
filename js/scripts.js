@@ -1,6 +1,6 @@
 menuToggler.addEventListener('click', ev =>{
   menuToggler.classList.toggle('open');
-  menuToggler.textcontent = menuToggler.textcontent === "X" ? "≡" : "X";
+  menuToggler.textcontent = menuToggler.textcontent === "x" ? "≡":"x";
 });
 
 for(const element of document.querySelectorAll('nav a')){
@@ -11,6 +11,7 @@ for(const element of document.querySelectorAll('nav a')){
 
 
 function myFunction(imgs) {
+  var contain = document.getElementById("contain");
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
