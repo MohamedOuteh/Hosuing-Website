@@ -9,8 +9,12 @@ for (const element of document.querySelectorAll('nav a')) {
 }
 
 
+const expandImg = document.getElementById("expandedImg");
+const imgtext = document.getElementById("imgtext");
+expandImg.addEventListener('click', myFunction);
+imgtext.addEventListener('click', myFunction);
 
-function myFunction(imgs) {
+function myFunction(imgs){
   // Get the expanded image
   const expandImg = document.getElementById("expandedImg");
   // Get the image text
@@ -23,10 +27,11 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
-const expandImg = document.getElementById("expandedImg");
-const imgtext = document.getElementById("imgtext");
-expandImg.addEventListener("click", myFunction);
-imgtext.addEventListener("click", myFunction);
+const closebtn = document.getElementById("closebtn");
+closebtn.addEventListener("click", function(){
+	this.parentElement.style.display='none';
+});
+
 
 
 function myFunction1(imgs) {
@@ -47,6 +52,11 @@ const text = document.getElementById("imtext");
 image.addEventListener("click", myFunction1);
 text.addEventListener("click", myFunction1);
 
+const close = document.getElementById("close");
+close.addEventListener("click", function(){
+	this.parentElement.style.display='none';
+});
+
 function myFunction2(imgs) {
   // Get the expanded image
   const expandImg = document.getElementById("expandIm");
@@ -64,3 +74,8 @@ const expandIm = document.getElementById("expandIm");
 const imtex = document.getElementById("imtex");
 expandIm.addEventListener("click", myFunction2);
 imtex.addEventListener("click", myFunction2);
+
+const buttonclose = document.getElementById("buttonclose");
+buttonclose.addEventListener("click", function(){
+	this.parentElement.style.display='none';
+});

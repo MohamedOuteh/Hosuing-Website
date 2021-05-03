@@ -351,7 +351,25 @@ ul.column{
   }
 
   /* Closable button inside the expanded image */
-  .closebtn {
+  #closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: red;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  #close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: red;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  #buttonclose{
     position: absolute;
     top: 10px;
     right: 15px;
@@ -616,6 +634,7 @@ ul.column{
       cursor: pointer;
     }
     /*Houses Styling*/
+
     /*Gallery Styling*/
     .column {
       -ms-flex: 50%;
