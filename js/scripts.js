@@ -23,6 +23,12 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
+const expandImg = document.getElementById("expandedImg");
+const imgtext = document.getElementById("imgtext");
+expandImg.addEventListener("click", myFunction);
+imgtext.addEventListener("click", myFunction);
+
+
 function myFunction1(imgs) {
   // Get the expanded image
   const expandImg = document.getElementById("expandImg");
@@ -36,6 +42,11 @@ function myFunction1(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
+const image = document.getElementById("expandImg");
+const text = document.getElementById("imtext");
+image.addEventListener("click", myFunction1);
+text.addEventListener("click", myFunction1);
+
 function myFunction2(imgs) {
   // Get the expanded image
   const expandImg = document.getElementById("expandIm");
@@ -48,3 +59,8 @@ function myFunction2(imgs) {
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
 }
+
+const expandIm = document.getElementById("expandIm");
+const imtex = document.getElementById("imtex");
+expandIm.addEventListener("click", myFunction2);
+imtex.addEventListener("click", myFunction2);
