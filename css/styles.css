@@ -3,6 +3,10 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Montserrat:wght@300&display=swap');
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -11,11 +15,54 @@ footer{
   background-color: darkgrey;
   color: white;
 }
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: black;
+  background: #083a3d;
   color: white;
   z-index: 0;
 }
@@ -74,7 +121,7 @@ header{
 }
 
 header h1{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(30 52 59 / 70%);
   margin: 0;
   padding: 0.25em 1em;
 }
@@ -97,6 +144,11 @@ header nav{
 
 #menuToggler.open + header nav{
   transform: translate(0);
+}
+
+em{
+  font-style: normal;
+  font-size: 2em;
 }
 
 nav a{
@@ -241,11 +293,6 @@ p.cards .back{
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
 article.Founder{
   width: 100%;
   position:relative;
@@ -325,29 +372,35 @@ ul.column{
 
   /* Expanding image text */
   #imgtext {
-    position: sticky;
-    bottom: 30px;
-    left: 15px;
-    color: red;
-    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Expanding image text */
   #imtext {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: red;
-    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Expanding image text */
   #imtex {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: red;
-    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Closable button inside the expanded image */
@@ -418,6 +471,7 @@ ul.column{
 
     body{
       background-color: lightblue;
+      font-family: 'Montserrat', sans-serif;
       color: black;
     }
 
@@ -476,7 +530,7 @@ ul.column{
     section.images {
       flex-direction: row;
       justify-content: space-around;
-      align-items: flex-start;
+      align-items: baseline;
     }
     article {
       flex-basis: 45%;
@@ -485,7 +539,7 @@ ul.column{
     article img{
       width: 100%;
       height: 100%;
-      filter: drop-shadow(0 0 7px lightgrey);
+      filter: drop-shadow(0 0 7px black);
       padding: 1em;
     }
 
@@ -603,7 +657,7 @@ ul.column{
       position: sticky;
       bottom: 30px;
       left: 15px;
-      color: #b4ff00;
+      color: #add8e6;
       font-size: 20px;
     }
 
@@ -612,7 +666,7 @@ ul.column{
       position: absolute;
       bottom: 15px;
       left: 15px;
-      color: #b4ff00;
+      color: #add8e6;
       font-size: 20px;
     }
 
@@ -621,7 +675,7 @@ ul.column{
       position: absolute;
       bottom: 15px;
       left: 15px;
-      color: #b4ff00;
+      color: #add8e6;
       font-size: 20px;
     }
     /* Closable button inside the expanded image */
@@ -723,11 +777,10 @@ ul.column{
 
     section.images {
       display: flex;
-      align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      align-items: flex-start;
+      align-items: baseline;
     }
 
     section#story p, section#story h2 {
@@ -764,11 +817,17 @@ ul.column{
     }
     /* Expanding image text */
     #imgtext {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: #b4ff00;
-      font-size: 20px;
+      color: #ccccff;
+    }
+
+    /* Expanding image text */
+    #imtext {
+      color: #ccccff;
+    }
+
+    /* Expanding image text */
+    #imtex {
+      color: #ccccff;
     }
     /* Closable button inside the expanded image */
     .closebtn {
