@@ -363,9 +363,6 @@ ul.column{
     margin-top: 20px;
     margin-left: auto;
   }
-
-
-
   .container p{
     margin-right: auto;
   }
@@ -411,6 +408,7 @@ ul.column{
     color: red;
     font-size: 35px;
     cursor: pointer;
+    font-weight: bold;
   }
 
   #close{
@@ -420,6 +418,7 @@ ul.column{
     color: red;
     font-size: 35px;
     cursor: pointer;
+    font-weight: bold;
   }
 
   #buttonclose{
@@ -429,6 +428,16 @@ ul.column{
     color: red;
     font-size: 35px;
     cursor: pointer;
+    font-weight: bold;    
+  }
+
+  #print{
+    background-color: lightblue;
+    color: #083a3d;
+    width: -webkit-fill-available;
+    height: 50px;
+    font-weight: bold;
+    font-size: xx-large;
   }
 
   /*Houses Styling*/
@@ -687,6 +696,11 @@ ul.column{
       font-size: 35px;
       cursor: pointer;
     }
+
+    #print{
+      background-color: #083a3d7d;
+      color: white;
+    }
     /*Houses Styling*/
 
     /*Gallery Styling*/
@@ -836,7 +850,9 @@ ul.column{
       color: #00048a;
       width: 100%;
     }
-
+    #print{
+      background-color: #767692;
+    }
     /*Houses Styling*/
     /*Gallery Styling*/
     .column {

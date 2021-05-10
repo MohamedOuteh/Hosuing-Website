@@ -79,3 +79,10 @@ const buttonclose = document.getElementById("buttonclose");
 buttonclose.addEventListener("click", function(){
 	this.parentElement.style.display='none';
 });
+
+
+const print=document.getElementById("print");
+print.addEventListener("click", function()
+{
+	window.print();
+});
