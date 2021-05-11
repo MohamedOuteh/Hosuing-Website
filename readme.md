@@ -30,3 +30,9 @@ The `js/scripts.js` file contains a simple console.log statement to confirm that
 ## js/housescripts.js
 
 The `js/housescripts.js` file contains a simple console.log statement to confirm that it is being executed on the houses page only.
+
+## References
+Used these reference for the creation of the web pages.
+
+W3Schools (2019). W3Schools Online Web Tutorials. [online] W3schools.com.
+Zoopla (2019). Zoopla. [online] Zoopla.co.uk.
