@@ -114,7 +114,7 @@ header{
   font-size: 2em;
   min-height: 70vh;
   /* header background image goes here */
-  background-image: url("house.jpg");
+  background-image: url("house1.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -526,6 +526,9 @@ ul.column{
     footer{
       background-color: lightgrey;
       color: white;
+    }
+    header{
+        background-image: url("house.jpg");
     }
     header nav{
       letter-spacing: 0.02em;
