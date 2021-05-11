@@ -336,6 +336,7 @@ article.Founder{
   width: 100%;
   position:relative;
   z-index: 10;
+  text-align-last: center;
 }
 
 /*About us Styling*/
