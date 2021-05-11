@@ -1,6 +1,6 @@
 # CTEC3905 Assignment - Mohamed Outeh(P2436635) - Lotus Housing website
 
-This repository contain all of the necessary code for a housing website. The pages would include `index.html`, `houses.html`, `gallery.html`, `about.html`. Also there would be stylsheets and java pages include in the pages below.
+This repository contain all of the necessary code for a housing website. The pages would include `index.html`, `houses.html`, `gallery.html`, `about.html`. Also there would be stylesheet and java pages include in the pages below.
 
 
 ## index.html
