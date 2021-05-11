@@ -478,6 +478,7 @@ ul.column{
     height: 50px;
     font-weight: bold;
     font-size: xx-large;
+    border-radius: 20px;
   }
 
   /*Houses Styling*/
