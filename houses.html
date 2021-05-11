@@ -159,13 +159,26 @@
   </main>
   <footer>
     <h3>Please follow us on social media:</h3>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-reddit"></a>
-    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <section class="media">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-reddit"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+    </section>
+
+    <form id="Contact">
+      <h2>Contact Us</h2>
+      <label for="myUser">Name: </label>
+      <input id="myUser" name="username" placeholder="enter your name" required>
+      <label for="myEmail">Email: </label>
+      <input id="myEmail" name="email" placeholder="enter your email" required>
+      <label for="myQuery">Query: </label>
+      <input id="myQuery" name="query" placeholder="enter your query" minlength="8" required>
+      <input type="submit" value="Submit">
+    </form>
     <h4>@Copyright Lotus Housing</h4>
   </footer>
-  <script src="js/scripts.js"></script>
+  <script src="js/housescripts.js"></script>
 </body>
 </html>

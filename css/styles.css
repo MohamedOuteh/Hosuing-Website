@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 html{
@@ -19,7 +20,7 @@ footer{
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 }
@@ -57,6 +58,10 @@ footer{
 .fa-reddit {
   background: #ff5700;
   color: white;
+}
+
+.media{
+  padding-bottom: 1em;
 }
 
 body {
@@ -204,7 +209,6 @@ article img{
 
 
 article h2{
-  position: absolute;
   text-align: center;
   top: 0;
   margin: 0;
@@ -231,7 +235,41 @@ section.images article{
 
 
 section, article, footer{
-  padding: 0;
+  padding: 0.7em;
+  padding-bottom: 0.1em;
+  margin-top: 1em;
+}
+
+form {
+ display: grid;
+ grid-row-gap: 0.25em;
+ grid-column-gap: 1em;
+ grid-template-columns: minmax(max-content, 1fr) 3fr;
+}
+
+form h2 {
+ grid-column: 1 / 3;
+}
+form input[type="submit"] {
+ grid-column: 2 / 3;
+ justify-self: end;
+}
+
+form input:invalid {
+ border-width: 0.5px 0.5px 0.5px 3px;
+ border-left-style: solid;
+ border-left-color: red;
+}
+form input:valid {
+ border-width: 0.5px 0.5px 0.5px 3px;
+ border-left-style: solid;
+ border-left-color: green;
+}
+form:invalid {
+ border-top: 3px solid red;
+}
+form:valid {
+ border-top: 3px solid green;
 }
 
 /*About us Styling*/
@@ -269,6 +307,7 @@ section, article, footer{
   box-sizing: border-box;
   transition: transform 0.6s;
   backface-visibility: hidden;
+  font-family: 'Indie Flower', cursive;
 }
 
 .card .front, .card:hover .back {
@@ -428,7 +467,7 @@ ul.column{
     color: red;
     font-size: 35px;
     cursor: pointer;
-    font-weight: bold;    
+    font-weight: bold;
   }
 
   #print{
